@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html class="no-js" lang="en">
     <head>
         <meta charset="utf-8">
@@ -5,11 +6,76 @@
         <title>Chat Plugin for UI in JavaScript | Ankur Mishra</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/chatPlugin.css">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-        <script src="chatPlugin.js"></script>
+        <script src="js/chatPlugin.js"></script>
     </head>
     <body>
+        <p>Four simple steps to use this plugin.</p>
+        <ol>
+            <li>
+                <p>Include js file, add following within head tags of your markup, or between body close and html close tags</p> 
+                <p>
+                    <code><</code>
+                    <code>script </code>
+                    <code>src=</code>
+                    <code>"js/chatPlugin.js"</code>
+                    <code>></code>
+                    <code><</code>
+                    <code>/</code>
+                    <code>script</code>
+                    <code>></code>
+                </p>
+                <p> Do not forget to include jQuery.js as a prerequisite to run this plugin. Add following before the js file under head tag</p>
+                <p>
+                    <code><</code>
+                    <code>script</code>
+                    <code>src=</code>
+                    <code>"http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"</code>
+                    <code>></code>
+                    <code><</code>
+                    <code>/</code>
+                    <code>script</code>
+                    <code>></code>
+                </p>
+            </li>
+            <li>
+                <p>Include css file, add following within head tags of your markup</p> 
+                <p>
+                    <code><</code>
+                    <code>link </code>
+                    <code>rel=</code>
+                    <code>"stylesheet"</code>
+                    <code>href=</code>
+                    <code>"css/chatPlugin.js"</code>
+                    <code>/</code>
+                    <code>></code>
+                </p>
+            </li>
+            <li>
+                <p>Add following markup somewhere in within the body tags</p> 
+                <p>
+                    <code><</code>
+                    <code>div</code>
+                    <code>id=</code>
+                    <code>"am_container"</code>
+                    <code>></code>
+                    <code><</code>
+                    <code>/</code>
+                    <code>div</code>
+                    <code>></code>
+                </p>
+            </li>
+            <li>
+                <p>Finally initiate the plugin js by adding the following function, after document.ready preferably</p> 
+                <p>
+                <code>initiate_chat</code>
+                    <code>()</code>
+                    <code>;</code>
+                </p>
+            </li>
+
+        </ul>
         <div id="am_container"></div>  
     </body>
     <script type="text/javascript">

@@ -1,0 +1,102 @@
+#am_container {
+    width: 350px;
+    position: fixed;
+    bottom: 5px;
+    right: 20px;
+    border: 2px solid #444; }
+.am_title { 
+    background: #444;
+    color: #fff;
+    padding: 4px 10px; 
+    height: 25px; }
+.am_control {
+    display: inline-block;
+    float: right; 
+    text-indent: -9999px;
+    height: 25px;
+    width: 60px; }
+.am_welcomeText {
+    margin: 0;
+    font-family: Arial; 
+    font-size: 15px;
+    line-height: 25px;
+    width: 260px;
+    height: 25px;
+    overflow: hidden; }
+.am_min_max, .am_exit {
+    margin: 0 4px; 
+    width: 23px;
+    height: 23px; 
+    display: inline;
+    float: left; 
+    cursor: pointer; }
+.am_min_max {
+    background: url('../img/min_max.png') no-repeat;
+    background-position: -25px -1px; }
+.am_max {
+    background-position: 0px -2px; }
+.am_exit {
+    background: url('../img/exit.png') no-repeat;
+    margin-right: 0; }
+#am_login {
+    padding: 10px;
+    text-align: center; }
+#am_login p {
+    margin: 5px;
+    font-size: 16px;
+    font-family: Arial; }
+#am_login input#am_name, #am_chat input#am_usermsg {
+    border: 1px solid #ccc;
+    display: block;
+    font-family: Arial;
+    font-size: 16px;
+    padding: 5px;
+    box-shadow: inset 2px 2px 2px #ddd; }
+#am_login input#am_name {
+    width: 250px; 
+    margin: 10px auto; }
+#am_login #am_enter {
+    display: inline-block;
+    background: #444;
+    color: #fff;
+    font-family: Arial;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+    line-height: 10px;
+    border: 2px solid #444;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+#am_login #am_enter:hover {
+    background: #808080; }
+#am_chat #am_chatbox {
+    min-height: 100px;
+    padding: 0 10px 10px; }
+#am_chat .am_chatAlert {
+    font-family: Arial;
+    font-size: 14px;
+    font-style: italic;
+    margin: 8px 0;
+    color: #808080; }
+#am_chat .am_time {
+    float: right;
+    font-style: italic;
+    color: #808080; }
+#am_chat .am_chattext {
+    margin: 0; 
+    font-family: Arial; 
+    font-size: 15px;
+    line-height: 18px; }
+#am_chat input#am_usermsg {
+    width: 330px; 
+    margin: 0 auto 5px; }
+#am_container .am_visible {
+    display: block; }
+#am_container .am_hidden {
+    display: none; }
