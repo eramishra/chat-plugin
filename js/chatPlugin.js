@@ -141,6 +141,7 @@
                     hideChatPlugin();
                     showLogin();
                     $('#am_chatbox').html('');
+                    $('#am_name').val('');
                     $('.am_welcomeText').text('Chat');
                 }
             }
