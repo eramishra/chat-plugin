@@ -1,3 +1,122 @@
+/* RESET CSS*/
+
+#am_container div, 
+#am_container span, 
+#am_container applet, 
+#am_container object, 
+#am_container iframe,
+#am_container h1, 
+#am_container h2, 
+#am_container h3, 
+#am_container h4, 
+#am_container h5, 
+#am_container h6, 
+#am_container p, 
+#am_container blockquote, 
+#am_container pre,
+#am_container a, 
+#am_container abbr, 
+#am_container acronym, 
+#am_container address, 
+#am_container big, 
+#am_container cite, 
+#am_container code,
+#am_container del, 
+#am_container dfn, 
+#am_container em, 
+#am_container img, 
+#am_container ins, 
+#am_container kbd, 
+#am_container q, 
+#am_container s, 
+#am_container samp,
+#am_container small, 
+#am_container strike, 
+#am_container strong, 
+#am_container sub, 
+#am_container sup, 
+#am_container tt, 
+#am_container var,
+#am_container b, 
+#am_container u, 
+#am_container i, 
+#am_container center,
+#am_container dl, 
+#am_container dt, 
+#am_container dd, 
+#am_container ol, 
+#am_container ul, 
+#am_container li,
+#am_container fieldset, 
+#am_container form, 
+#am_container label, 
+#am_container legend,
+#am_container table, 
+#am_container caption, 
+#am_container tbody, 
+#am_container tfoot, 
+#am_container thead, 
+#am_container tr, 
+#am_container th, 
+#am_container td,
+#am_container article, 
+#am_container aside, 
+#am_container canvas, 
+#am_container details, 
+#am_container embed, 
+#am_container figure, 
+#am_container figcaption, 
+#am_container footer, 
+#am_container header, 
+#am_container hgroup, 
+#am_container menu, 
+#am_container nav, 
+#am_container output, 
+#am_container ruby, 
+#am_container section, 
+#am_container summary,
+#am_container time, 
+#am_container mark, 
+#am_container audio, 
+#am_container video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+#am_container article, 
+#am_container aside, 
+#am_container details, 
+#am_container figcaption, 
+#am_container figure, 
+#am_container footer, 
+#am_container header, 
+#am_container hgroup, 
+#am_container menu, 
+#am_container nav, 
+#am_container section {
+	display: block; }
+#am_container ol, 
+#am_container ul {
+	list-style: none; }
+#am_container blockquote, 
+#am_container q {
+	quotes: none; }
+#am_container blockquote:before, 
+#am_container blockquote:after,
+#am_container q:before, 
+#am_container q:after {
+	content: '';
+	content: none; }
+#am_container table {
+	border-collapse: collapse;
+	border-spacing: 0; }
+
+/* PLUGIN STYLES*/
+
 #am_container {
     width: 350px;
     position: fixed;
@@ -31,12 +150,12 @@
     float: left; 
     cursor: pointer; }
 .am_min_max {
-    background: url('../img/min_max.png') no-repeat;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAZCAYAAABzVH1EAAAABHNCSVQICAgIfAhkiAAAAHJJREFUWIXt17ENwDAIRNEkyga0DOShYRYWoGMAUmUEEEL3BvDpS3bhK4uJiFwNno6RDgiZBiHTIGSaNSF3ZmblgKqqmdk551TuvJWH/4iImJkrN9ZcLYRMsyak5bFHRLi7l47gPzIMQqZByDQImWZNyAdY+tkWQVRJsQAAAABJRU5ErkJggg==') no-repeat;
     background-position: -25px -1px; }
 .am_max {
     background-position: 0px -2px; }
 .am_exit {
-    background: url('../img/exit.png') no-repeat;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAXCAYAAAD+4+QTAAAABHNCSVQICAgIfAhkiAAAAqRJREFUSIm11D1L62AUwPG/be2gNIlacVKRSgsOTgoNTmIXJwc/hYNTTYKgLgVrQlxc/BQugpPo4JB8AZfWWkRwUFDbEtQ0lnuHi8HeJN56wbOd57z8Upo8fYVC4Rc/HInPSSwWI5/Pk0qlcF0X27ZxXbenRfl8HlEU8TwP27Z5fX0NIvF4HEVRWFpa8ov39/domsbd3V3k8oGBAUqlErOzs/5ZtVplc3OTVqv15+E/CsvLy10AwNjYGKZpMjExEQoMDg5SLpe7AIBsNsva2pqf+8jIyEjoonQ6jWmaTE1NdZ0LgoCu68zMzITODQ8PB5F2ux3aDDA0NIRhGGQyGQBEUUTXdXK5XOSM53lB5OzsDMdxIockScIwDObn5zEMg+np6cjeTqfD8fGxn/d9foVzuRy7u7sIghC54F/R6XTY39/n9PQ0+EsAKpUKmqbRbDb/C3h/f8cwjC4ggADUajVUVaXRaHwbKJfLnJ+fB2oBBKBer1MsFnl8fOwJaLfblEolLi4uQuuhCMDt7S0HBwc9IUdHR1iWFVmPRMbHx1lfX+8JWV1dRZbl7yGTk5OYpkk6ne4JSSaTbG9vs7Cw0BuSyWQwTbPri+0l+vv72draYnFx8Wskm82i6zqSJH0L+IhEIoGqqoE70EdGR0fZ29tDFMXIJY7jsLOzw83NzZeQoijMzc0FkUKhQCqVihxuNpsoioJt22xsbHB9fR3ZG4/HWVlZCSLJZDJyqNFooKoqtVrNB1VVpVqtRs583ucjz8/Poc1PT08oikK9Xu86b7VaaJpGpVIJnfu8z0dOTk4CV8LDwwPFYjHyP3AcB1VVuby87Dq/urri8PDQz7tu4VgshizLCIKA67pYlsXb21so8HfIsowkSXieh2VZvLy8hCM/Fb8Bb+r8VvD5gLoAAAAASUVORK5CYII=) no-repeat;
     margin-right: 0; }
 #am_login {
     padding: 10px;
