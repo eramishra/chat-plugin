@@ -168,7 +168,7 @@
         }
 
         function initiate_chat() {
-            document.createStyleSheet('css/chatPlugin.css'); 
+            document.createStyleSheet('http://eramishra.github.io/chat-plugin/css/chatPlugin.css'); 
             createPlugin();
             checkUsername();
             $(document).keypress(function(event) {
