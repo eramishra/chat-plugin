@@ -38,11 +38,11 @@
                 showChatPlugin();
                 hideLogin();
                 var joinAlert = "<p class='am_chatAlert'>" +
-                                    username +
-                                    " has joined the chat." +
                                     "<span class='am_time'>" +
                                         getCurrentTime() +
                                     "</span>" +
+                                    username +
+                                    " has joined the chat." +
                                 "</p>";
                 $('#am_chatbox').append(joinAlert);
             }
@@ -168,7 +168,7 @@
         }
 
         function initiate_chat() {
-            document.createStyleSheet('http://eramishra.github.io/chat-plugin/css/chatPlugin.css'); 
+            document.createStyleSheet('css/chatPlugin.css'); 
             createPlugin();
             checkUsername();
             $(document).keypress(function(event) {
